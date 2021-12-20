@@ -4,13 +4,13 @@ RUN apk add --no-cache bash
 
 WORKDIR /app
 
-ARG PHANTOM_VERSION=0.5.2
+ARG PHANTOM_VERSION=0.5.3
 
 ADD entrypoint.sh .
 
-RUN wget https://github.com/jhead/phantom/releases/download/v${PHANTOM_VERSION}/phantom-linux
+RUN wget https://github.com/jhead/phantom/releases/download/v${PHANTOM_VERSION}/phantom-linux-arm7
 
-RUN chmod +x phantom-linux
+RUN chmod +x phantom-linux-arm7
 
 RUN chmod +x entrypoint.sh
 
