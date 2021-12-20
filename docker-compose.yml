@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   phantom-proxy:
-    image: mudislander/minecraft-phantom-proxy:latest
+    image: mudislander/minecraft-phantom-proxy-docker:latest
     container_name: phantom-proxy
     environment:
       SERVER: example.com:19132
